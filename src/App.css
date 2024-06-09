@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+
+:root {
+    --dark-brown: #242220;
+    --white : #B3AAA2;
+    --light-brown : #685044;
+    --gray : #7B827C;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Italianno", cursive;
+    background-color: var(--dark-brown);
+}
