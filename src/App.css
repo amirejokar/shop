@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-
+/* font-family: "Italianno", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* font-family: "Playfair Display", serif; */
 
 :root {
     --dark-brown: #242220;
     --white : #B3AAA2;
+    --balck : #010101;
     --light-brown : #685044;
     --gray : #7B827C;
   }
