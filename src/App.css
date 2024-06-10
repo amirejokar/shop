@@ -18,6 +18,9 @@
 }
 
 body{
-    font-family: "Italianno", cursive;
     background-color: var(--dark-brown) ;
+}
+
+li{
+    list-style: none !important;
 }

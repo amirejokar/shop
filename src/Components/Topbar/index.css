@@ -1,0 +1,40 @@
+img.header-img{
+    display: none;
+    z-index: 1;
+    margin-top: -3rem;
+    background-size: cover;
+}
+div.nabar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 2;
+    background-color: var(--white);
+    backdrop-filter: blur(1rem);
+    margin-top: 3rem !important;
+    border-radius: 2rem;
+    height: 4.5rem;
+    opacity: .5;
+}
+.navbar-center-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-center-content li {
+    margin: .2rem;
+}
+.navbar-left{
+    font-family: "Italianno", cursive;
+    font-size: 2.5rem;
+}
+.navbar-center-content li{
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+.active-item{
+    border-bottom: 3px solid var(--dark-brown);
+    padding-bottom: .3rem;
+}
