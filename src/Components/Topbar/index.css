@@ -11,7 +11,7 @@ div.nabar {
   align-items: center;
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
   margin-top: 3rem !important;
   border-radius: 2rem;
   height: 4.5rem;
@@ -28,7 +28,9 @@ div.nabar {
 }
 .navbar-left {
   font-family: "Italianno", cursive;
-  font-size: 2.5rem;
+  font-weight: bold;
+
+  /* font-size: 2.5rem; */
 }
 .navbar-center-content li {
   font-family: "Playfair Display", serif;
