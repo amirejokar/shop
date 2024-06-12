@@ -4,8 +4,7 @@
   object-fit: cover;
   background-repeat: no-repeat;
   height: 770px;
-
-  }
+}
 div.nabar {
   position: absolute;
   position: fixed;
@@ -13,13 +12,20 @@ div.nabar {
   flex-direction: row;
   align-items: center;
   z-index: 2;
-  background-color: rgba(179, 170, 163, .6);
+  background-color: rgba(179, 170, 163, 0.1);
   backdrop-filter: blur(8px);
-  margin-top: 3rem !important;
-  border-radius: 2rem;
   height: 4.5rem;
   box-shadow: 1px 1px 15px rgba(34, 32, 30, 0.4),
     -1px -1px 15px rgb(38, 36, 34, 0.4);
+    transition: all .2s ease-in-out;
+}
+.navbar-after-scroll {
+  border-radius: 1.1rem;
+  margin-top: 2rem !important;
+}
+.navbar-befor-scroll {
+  margin-top: 0rem !important;
+  border-radius: 0;
 }
 .navbar-center-content {
   display: flex;
@@ -39,8 +45,8 @@ div.nabar {
     font-size: 2.3rem;
     padding-left: 2rem;
   }
-  .menu-icone{
-    margin-top: .8rem;
+  .menu-icone {
+    margin-top: 0.8rem;
   }
 }
 .navbar-center-content li {

@@ -1,13 +1,38 @@
+/* eslint-disable no-unreachable */
 import React from "react";
 import topimagedesktop from "./home.jpg";
 import topimagemd from "./home-md.jpg";
 import topimagesm from "./home-sm.jpg";
 import "./index.css";
+import { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 export default function Topbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY >= 30) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="d-flex justify-content-center ">
-      <div className="nabar col-10 ">
+      <div
+        className={`nabar${
+          scrolled
+            ? " navbar-after-scroll col-10"
+            : " navbar-befor-scroll col-12"
+        }`}
+      >
         <div className="navbar-left col-lg-3 col-md-3 col-12 m-auto fs-lg-1 fs-md-2 fs-sm-3 fs-3">
           <div className="menu-section px-sm-4 px-5">
             online shop name
