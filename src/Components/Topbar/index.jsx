@@ -1,7 +1,7 @@
 import React from "react";
 import topimagedesktop from "./home.jpg";
-import topimagemd from './home-md.jpg'
-import topimagesm from './home-sm.jpg'
+import topimagemd from "./home-md.jpg";
+import topimagesm from "./home-sm.jpg";
 import "./index.css";
 import { IoMenu } from "react-icons/io5";
 export default function Topbar() {
@@ -9,10 +9,10 @@ export default function Topbar() {
     <div className="d-flex justify-content-center ">
       <div className="nabar col-10 ">
         <div className="navbar-left col-lg-3 col-md-3 col-12 m-auto fs-lg-1 fs-md-2 fs-sm-3 fs-3">
-          <div className="menu-section px-sm-4 px-5" >
+          <div className="menu-section px-sm-4 px-5">
             online shop name
             <div>
-              <IoMenu className="fs-1 d-block d-md-none" />
+              <IoMenu className=" menu-icone fs-1 d-block d-md-none" />
             </div>
           </div>
         </div>
