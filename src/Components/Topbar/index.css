@@ -17,6 +17,7 @@ div.nabar {
   height: 4.5rem;
   box-shadow: 1px 1px 15px rgba(34, 32, 30, 0.4),
     -1px -1px 15px rgb(38, 36, 34, 0.4);
+    padding-left: 1rem;
 }
 .navbar-center-content {
   display: flex;
@@ -29,8 +30,6 @@ div.nabar {
 .navbar-left {
   font-family: "Italianno", cursive;
   font-weight: bold;
-
-  /* font-size: 2.5rem; */
 }
 .navbar-center-content li {
   font-family: "Playfair Display", serif;
