@@ -6,8 +6,11 @@ import topimagesm from "./home-sm.jpg";
 import "./index.css";
 import { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import { IoMdClose } from "react-icons/io";
+
 export default function Topbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +27,10 @@ export default function Topbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handelOpenMenu = () => {
+    setOpen(!open);
+  };
   return (
     <div className="d-flex justify-content-center ">
       <div
@@ -37,7 +44,17 @@ export default function Topbar() {
           <div className="menu-section px-sm-4 px-5">
             online shop name
             <div>
-              <IoMenu className=" menu-icone fs-1 d-block d-md-none" />
+              {!open ? (
+                <IoMenu
+                  onClick={handelOpenMenu}
+                  className=" menu-icone fs-1 d-block d-md-none"
+                />
+              ) : (
+                <IoMdClose
+                  onClick={handelOpenMenu}
+                  className=" menu-icone fs-1 d-block d-md-none"
+                />
+              )}
             </div>
           </div>
         </div>
@@ -50,6 +67,17 @@ export default function Topbar() {
           </ul>
         </div>
       </div>
+      {open && (
+        <div className="open-menu col-6">
+            <IoMdClose onClick={handelOpenMenu} className="icone-open-menu" />
+          <ul className="">
+            <li className="d-flexr">all products</li>
+            <li>product 1</li>
+            <li>product 2</li>
+            <li>product 3</li>
+          </ul>
+        </div>
+      )}
       <div className="mask col-12">
         <img
           className="header-img col-12 d-none d-lg-block"
