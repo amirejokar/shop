@@ -17,7 +17,7 @@ div.nabar {
   height: 4.5rem;
   box-shadow: 1px 1px 15px rgba(34, 32, 30, 0.4),
     -1px -1px 15px rgb(38, 36, 34, 0.4);
-    transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .navbar-after-scroll {
   border-radius: 1.1rem;
@@ -68,4 +68,48 @@ div.nabar {
 .mask {
   -webkit-mask-image: linear-gradient(black, transparent);
   mask-image: linear-gradient(black, transparent);
+}
+
+.open-menu {
+  transition: opacity 0.3s, transform 0.3s; /* add transition effect */
+  opacity: 0;
+  transform: translateX(100%);
+  z-index: 999;
+  padding: 0%;
+  position: absolute;
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  background-color: var(--dark-brown);
+  color: var(--white);
+  height: 100vh;
+  box-shadow: 1px 1px 15px rgba(34, 32, 30, 0.4),
+    -1px -1px 15px rgb(38, 36, 34, 0.4);
+}
+.open-menu.active {
+  opacity: 1;
+  transform: translateX(0); /* final state, visible */
+}
+
+.open-menu ul {
+  padding: 0%;
+  margin-top: 2.65rem;
+  text-align: center;
+}
+.open-menu li {
+  padding: 1rem 0 1rem 0;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.open-menu li:hover {
+  background-color: rgba(179, 170, 163, 0.1);
+}
+.open-menu ul :first-child {
+  font-weight: 1000;
+}
+.icone-open-menu{
+  margin-top: 1.3rem;
+  position: absolute;
+  right: 3rem;
+  font-size: 1.7rem;
 }
