@@ -44,10 +44,23 @@ export default function Topbar() {
           <div className="menu-section px-sm-4 px-5">
             online shop name
             <div>
+<<<<<<< HEAD
+=======
+              {!open ? (
+>>>>>>> fcabcc320319b2fe678221c0d093dd2f9f284a74
                 <IoMenu
                   onClick={handelOpenMenu}
                   className=" menu-icone fs-1 d-block d-md-none"
                 />
+<<<<<<< HEAD
+=======
+              ) : (
+                <IoMdClose
+                  onClick={handelOpenMenu}
+                  className=" menu-icone fs-1 d-block d-md-none"
+                />
+              )}
+>>>>>>> fcabcc320319b2fe678221c0d093dd2f9f284a74
             </div>
           </div>
         </div>
@@ -60,8 +73,13 @@ export default function Topbar() {
           </ul>
         </div>
       </div>
+<<<<<<< HEAD
       {true && (
         <div className={`open-menu col-6 ${open ? 'active' : ''}`}>
+=======
+      {open && (
+        <div className="open-menu col-6">
+>>>>>>> fcabcc320319b2fe678221c0d093dd2f9f284a74
             <IoMdClose onClick={handelOpenMenu} className="icone-open-menu" />
           <ul className="">
             <li className="d-flexr">all products</li>

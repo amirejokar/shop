@@ -71,9 +71,6 @@ div.nabar {
 }
 
 .open-menu {
-  transition: opacity 0.3s, transform 0.3s; /* add transition effect */
-  opacity: 0;
-  transform: translateX(100%);
   z-index: 999;
   padding: 0%;
   position: absolute;
@@ -85,10 +82,7 @@ div.nabar {
   height: 100vh;
   box-shadow: 1px 1px 15px rgba(34, 32, 30, 0.4),
     -1px -1px 15px rgb(38, 36, 34, 0.4);
-}
-.open-menu.active {
-  opacity: 1;
-  transform: translateX(0); /* final state, visible */
+  transition: all 0.2s ease-in-out;
 }
 
 .open-menu ul {
