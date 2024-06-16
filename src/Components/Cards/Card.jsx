@@ -1,11 +1,12 @@
 import React from "react";
-import './Card.css'
-import model2 from './model1.png'
-export default function Card() {
+import "./Card.css";
+export default function Card({ img, txt }) {
   return (
     <div class="card">
-      <img src={model2} className="card-img" alt="khanom khanomi " />
-      <p class="heading">Popular this month</p>
+      <div className="mask-card">
+        <img src={img} className="card-img" alt="khanom khanomi " />
+      </div>
+      <p class="heading">{txt}</p>
     </div>
   );
 }
