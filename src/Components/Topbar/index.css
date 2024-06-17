@@ -12,7 +12,7 @@ div.nabar {
   flex-direction: row;
   align-items: center;
   z-index: 2;
-  background-color: rgba(179, 170, 163, 0.1);
+  background-color: rgba(179, 170, 163, 0.6);
   backdrop-filter: blur(8px);
   height: 4.5rem;
   box-shadow: 1px 1px 15px rgba(34, 32, 30, 0.4),

@@ -6,7 +6,7 @@ export default function Card({ img, txt }) {
       <div className="mask-card">
         <img src={img} className="card-img" alt="khanom khanomi " />
       </div>
-      <p class="heading">{txt}</p>
+      <p class="heading m-auto mb-2">{txt}</p>
     </div>
   );
 }
