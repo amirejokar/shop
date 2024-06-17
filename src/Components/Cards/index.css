@@ -1,7 +1,5 @@
 .cards-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 3rem;
     margin-bottom: 3rem;
+    /* display: flex;
+    flex-direction: row; */
 }
