@@ -1,8 +1,15 @@
+.poster-section{
+  margin-top: 9rem !important;
+  margin-bottom: 7rem !important;
+  width: 100%;
+}
+
 .container {
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: end;
+  margin-right: 10%;
 }
 
 .container .glass {
@@ -47,4 +54,9 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+.poster-txt{
+  color: var(--white);
+  padding: 0%;
+  margin-right: 10% !important;
 }
