@@ -12,7 +12,7 @@ export default function Cards() {
     { id: "3", img: model3, txt: "Popular this month" },
   ];
   return (
-    <div className="cards-box row px-2">
+    <div className="cards-box row flex-wrap justify-content-center px-2">
         {cardsData.map((card) => (
           <Card key={card.id} {...card} />
         ))}
