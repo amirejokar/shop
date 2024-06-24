@@ -1,7 +1,29 @@
+.image-poster-box{
+    margin-bottom: 7rem;
+}
 .img-poster{
     width: 100% ;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .img-poster img {
     object-fit:fill;
     width: 100%;
 }
+.txt-poster{
+    position: absolute;
+    font-family: "Italianno", cursive;
+    color: var(--white) ;
+    font-size: 48px;
+    text-align: center;
+    margin-top: -5rem;
+    width: 100%;
+}
+@media screen and (min-width: 956px){
+    .txt-poster{
+        margin-top: -9rem;
+
+    } 
+}
+
