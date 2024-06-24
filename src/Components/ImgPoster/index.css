@@ -1,0 +1,7 @@
+.img-poster{
+    width: 100% ;
+}
+.img-poster img {
+    object-fit:fill;
+    width: 100%;
+}
