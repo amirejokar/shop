@@ -19,6 +19,7 @@
     text-align: center;
     margin-top: -5rem;
     width: 100%;
+    font-weight: bolder;
 }
 @media screen and (min-width: 956px){
     .txt-poster{
